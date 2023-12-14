@@ -8,9 +8,9 @@ public class Main {
         connectMySQL dataBase = new connectMySQL();
         Connection connection= dataBase.JDBCConnect();
         Book bookDB= new Book();
-      //  bookDB.delTable(connection);
-       // bookDB.prepareTables(connection);
-      //  bookDB.insertData(connection);
+        bookDB.delTable(connection);
+        bookDB.prepareTables(connection);
+        bookDB.insertData(connection);
        bookDB.executeUpdate(connection);
        connection.close();
     }

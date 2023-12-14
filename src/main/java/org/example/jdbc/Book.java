@@ -28,7 +28,7 @@ public class Book {
                               (8, 'Река' ,'Алан Александр Милн'),
                               (9, 'Лев, колдунья и платяной шкаф' ,'Клайв Стэйплз Льюис'),
                               (10, 'Джейн Эйр' ,'Шарлотта Бронте')""");
-            System.out.printf("Создано %s записей",updatedRows);
+            System.out.printf("Создано %s записей\n",updatedRows);
         }
     }
     public   void executeUpdate(Connection connection) throws SQLException {
